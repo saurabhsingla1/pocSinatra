@@ -1,0 +1,29 @@
+<h1>Editing post</h1>
+
+<form action="/submitedit" method="POST">
+
+<table>
+
+<tr>
+	<td>ID:</td>
+	<td> <input type="text" name="post[id]" value=<%= @post.id %> readonly/></td>
+</tr>
+<tr>
+	<td>Name: </td>
+	<td> <input type="text" name="post[name]" value=<%= @post.name %> /></td>
+</tr>
+<tr>
+	<td>Title: </td>
+	<td> <input type="text" name="post[title]" value=<%= @post.title %> /></td>
+</tr>
+<tr>
+	<td>Description: </td>
+	<td> <input type="text" name="post[description]" value=<%= @post.description %> /></td>
+</tr>
+
+</table>
+	<input type="submit" value="Submit" />
+</form>
+
+
+<a href="/">Back</a>
